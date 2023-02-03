@@ -48,6 +48,23 @@ body {
   font-weight: bold;
 }
 
+.flex {
+  display: flex;
+  flex-direction: column;
+  width: 33%;
+  margin: 0 auto;
+}
+
+.display-input {
+  border: 1px solid #B295FF;
+  border-radius: 3px;
+  background: #6943ff;
+  color: #fff;
+  margin-bottom: .5em;
+  text-align: center;
+  padding: .5em .2em;
+}
+
 .display-btn {
   margin-bottom: .5em;
 }
