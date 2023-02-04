@@ -8,15 +8,21 @@ const kilogramsPounds = document.querySelector('.kilograms-pounds');
 
 // functions to convert metric units to imperial
 const conversionToFeet = (meter) => {
-  return meter * 3.281;
+   let num = meter * 3.281;
+   let n = num.toFixed(3);
+   return n;
 }
 
 const conversionToGallon = (liter) => {
-  return liter * 0.264; 
+  let num = liter * 0.264;
+  let n = num.toFixed(3);
+  return n; 
 }
 
 const conversionToPound = (kilo) => {
-  return kilo * 2.204;
+  let num = kilo * 2.204;
+  let n = num.toFixed(3);
+  return n;
 }
 
 
