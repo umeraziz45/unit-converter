@@ -34,7 +34,7 @@ body {
 
 .wrapper {
   background: #6943ff;
-  min-width: 50%;
+  max-width: 550px;
   text-align: center;
 }
 
@@ -44,6 +44,7 @@ body {
 }
 
 .display-title {
+  font-size: 1.5rem;
   margin: .5em;
   font-weight: bold;
 }
@@ -62,11 +63,20 @@ body {
   color: #fff;
   margin-bottom: .5em;
   text-align: center;
-  padding: .5em .2em;
+  padding: .1em 0;
+  font-size: 58px;
+  font-weight: bold;
+  width: 117px;
+}
+
+.display-btn:hover {
+  background: #f4f4f4;
 }
 
 .display-btn {
   margin-bottom: .5em;
+  width: 117px;
+  background: #fff;
 }
 
 .btn {
@@ -78,16 +88,21 @@ body {
 
 .converted-numbers {
   background: #f4f4f4;
-  padding: .75em;
+  padding: 1.5em;
   font-size: .8rem;
 }
 
 .converted-number-section {
   background: #fff;
-  padding: 1em;
-  margin-bottom: .5em;
+  padding: 1.5em 1em;
+  margin-bottom: 1em;
 }
 
 .converted-title {
-  font-weight: bold;
+  font-weight:500;
+  font-size: 1.25rem;
+}
+
+.converted-number {
+  font-size: 1rem;
 }
