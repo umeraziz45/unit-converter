@@ -86,6 +86,10 @@ body {
   font-size: 0.85rem;
 }
 
+.warning {
+  width: 100%;
+}
+
 .converted-numbers {
   background: #f4f4f4;
   padding: 1.5em;

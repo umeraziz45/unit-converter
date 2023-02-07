@@ -4,6 +4,7 @@ const convertInput = document.querySelector('.display-input');
 const meterFeets = document.querySelector('.meters-feets');
 const letersGallons = document.querySelector('.liters-gallons');
 const kilogramsPounds = document.querySelector('.kilograms-pounds');
+const warning = document.querySelector('.warning');
 
 
 // functions to convert metric units to imperial
@@ -28,13 +29,19 @@ const conversionToPound = (kilo) => {
 
 const convertToAnything = () => {
   const inputVal = Number(convertInput.value);
-  const feet = conversionToFeet(inputVal);
-  const gallon = conversionToGallon(inputVal);
-  const pound = conversionToPound(inputVal);
-
-  meterFeets.innerHTML = `${inputVal} meters = ${feet} feet | ${inputVal} = sss meters`;
-  letersGallons.innerHTML = `${inputVal} liters = ${gallon} gallons | ${inputVal} = sss meters`;
-  kilogramsPounds.innerHTML = `${inputVal} kilograms = ${pound} pounds | ${inputVal} = sss meters`;
+  if (!inputVal){
+    warning.innerHTML = `Input not valid, enter a number!`
+  } else {
+    warning.innerHTML = '';
+    
+    const feet = conversionToFeet(inputVal);
+    const gallon = conversionToGallon(inputVal);
+    const pound = conversionToPound(inputVal);
+  
+    meterFeets.innerHTML = `${inputVal} meters = ${feet} feet | ${inputVal} = sss meters`;
+    letersGallons.innerHTML = `${inputVal} liters = ${gallon} gallons | ${inputVal} = sss meters`;
+    kilogramsPounds.innerHTML = `${inputVal} kilograms = ${pound} pounds | ${inputVal} = sss meters`;
+  }
 }
 
 
